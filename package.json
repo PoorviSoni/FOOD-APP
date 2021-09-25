@@ -20,6 +20,7 @@
     "mongodb": "^4.1.1",
     "multer": "^1.4.3",
     "multer-storage-cloudinary": "^4.0.0",
+    "nodemon": "^2.0.13",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.3",
     "react-dom": "^17.0.2",
@@ -30,7 +31,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "nodemon server",
+    "heroku-postbuild":"npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
